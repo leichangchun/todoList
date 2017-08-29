@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/vue.js"></script>
+  <script src="js/vue-router.js"></script>
+  <script src="js/vuex.js"></script>
+  <link rel="stylesheet" href="css/todolist.css">
+  <title>单页面应用实例</title>
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <nav>
+        <div class="logo">Tode</div>
+        <ul>
+          <router-link to="/home" tag="li">首页</router-link>
+          <router-link to="/list" tag="li">计划列表</router-link>
+        </ul>
+      </nav>
+    </header>
+    <aside class="show-time">
+      <ul>
+        <li>已有时间</li>
+        <li><span>{{time}}</span> 小时</li>
+      </ul>
+    </aside>
+
+    <router-view></router-view>
+
+    <!-- <article class="app-body-home">
+      <h1>任务追踪</h1>
+      <p><a href="#">创建一个任务.</a></p>
+    </article> -->
+    <!-- <article class="app-body-list">
+      <div class="new_btn">创建</div>
+      <div class="list-item">
+        <p class="name">1</p>
+        <p class="time">2</p>
+        <p class="todo">3</p>
+        <p class="close">X</p>
+      </div>
+    </article> -->
+
+    <!-- <article class="app-body-add">
+      <div class="item"><label for="name">姓名 ： </label><input type="text" name="name" value="" id="name"></div>
+      <div class="item"><label for="time">事件 ： </label><input type="text" name="time" value="" id="time"></div>
+      <div class="item"><label for="desc">描述 ： </label><input type="text" name="desc" value="" id="desc"></div>
+      <div class="btn">保存</div>
+    </article> -->
+
+  </div>
+  <!-- <script type="text/babel" src="js/toDoList.js"></script> -->
+  <script src="js/toDoList.js"></script>
+</body>
+</html>
